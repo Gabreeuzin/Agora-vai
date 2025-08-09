@@ -108,9 +108,78 @@
       <vturb-smartplayer id="vid-68967ab911409894559318e9" style="display: block; margin: 0 auto; width: 100%; "></vturb-smartplayer> <script type="text/javascript"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/f6d4f472-4e96-4e02-bbcb-d18d9888a61c/players/68967ab911409894559318e9/v4/player.js", s.async=!0,document.head.appendChild(s); </script>
  
 
-   
-  </div>
+      
+ <div>
+ <meta charset="UTF-8">
+ <style>
+cakto-upsell-accept {
+    display: block;     /* garante que ele quebre linha */
+    margin-top: 30px;   /* espaço acima do botão */
+}
+</style>
 
+<style>
+/* Estilo para o botão de aceitar */
+cakto-upsell-accept::part(button) {
+    background-color: #16a34aff;   /* verde */
+    color: white;                /* texto branco */
+    border: none;                 /* remove borda preta */
+    padding: 15px 25px;           /* tamanho interno */
+    font-size: 18px;              /* tamanho do texto */
+    cursor: pointer;              /* mãozinha */
+    border-radius: 5px;           /* cantos arredondados */
+    transition: all 0.3s ease;    /* suaviza animação */
+}
+
+/* Animação ao passar o mouse */
+cakto-upsell-accept::part(button):hover {
+    background-color: #009a0f;    /* verde mais claro no hover */
+    transform: scale(1.05);       /* aumenta um pouco */
+    box-shadow: 0 0 10px rgba(0, 154, 15, 0.7); /* brilho suave */
+}
+</style>
+   <cakto-upsell-buttons>
+      <cakto-upsell-accept
+        bg-color="#16a34aff"
+        text-color="#ffffff"
+        upsell-accept-url="members_area"
+        offer-id="3adhw6e"
+        app-base-url="https://app.cakto.com.br"
+        offer-type="upsell"
+        upsell-reject-url="members_area"   
+      >
+        EU QUERO TRANSFORMAR O MEU CORPO
+      </cakto-upsell-accept>
+      <cakto-upsell-reject
+        upsell-reject-url="members_area"       
+      >
+        Não, eu não quero aproveitar a oferta
+      </cakto-upsell-reject>
+    </cakto-upsell-buttons>  
+    
+
+     <!-- Descomente o código abaixo para estilzar o css dos botões -->
+      <!-- <style>
+          /* Botão de aceitar upsell */
+          cakto-upsell-accept::part(button) {
+              background-color: red;
+              color: white;
+              /* Ajuste do tamanho do botão 
+              Descomente o código abaixo para definir um tamanho customizado para o botão */
+              /* width: 100vw; */
+          }
+
+          /* Botão de rejeitar upsell */
+          cakto-upsell-reject::part(button) {
+              background-color: blue;
+              color: white;
+          }
+      </style> -->
+
+  <script type="text/javascript" src="https://caktoscripts.nyc3.cdn.digitaloceanspaces.com/upsell.js"></script>
+ </div>
+
+   
 
 
 
